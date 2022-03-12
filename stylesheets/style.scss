@@ -1,0 +1,48 @@
+@use "reset";
+
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+.bg-cyan {
+  background-color: $dark-cyan;
+}
+
+.bg-dark-cyan {
+  background-color: $very-dark-cyan;
+}
+
+.bg-orange {
+  background-color: $bright-orange;
+}
+
+.card-preview {
+  max-width: 50rem;
+  color: $very-light-gray;
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.col {
+  padding: 3rem;
+}
+
+.container {
+  background-color: $very-light-gray;
+  padding-bottom: 0.5rem;
+  max-width: 100% !important;
+}
