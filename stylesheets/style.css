@@ -52,6 +52,10 @@ h6 {
   overflow-wrap: break-word;
 }
 
+h1 {
+  padding: 0.5rem 0;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -77,22 +81,34 @@ h6 {
 }
 
 .btn {
-  margin-top: 5rem;
+  margin-top: 4rem;
   border-width: 2px;
-  padding: 0.75rem 1.75rem;
+  padding: 0.7rem 1.85rem;
   border-radius: 35px;
 }
 
-.btn-orange:hover {
+.btn-orange {
   color: #e38826;
 }
-
-.btn-cyan:hover {
-  color: #006970;
+.btn-orange:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f2f2f2;
 }
 
-.btn-dark-cyan:hover {
+.btn-cyan {
   color: #006970;
+}
+.btn-cyan:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f2f2f2;
+}
+
+.btn-dark-cyan {
+  color: #006970;
+}
+.btn-dark-cyan:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f2f2f2;
 }
 
 .card-preview {
@@ -122,6 +138,11 @@ h6 {
   color: rgba(255, 255, 255, 0.75);
 }
 
+@media (max-width: 991px) {
+  .container {
+    height: auto !important;
+  }
+}
 @media (max-width: 600px) {
   .bg-dark-cyan {
     border-radius: 0;
