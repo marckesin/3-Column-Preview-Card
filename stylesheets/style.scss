@@ -6,6 +6,10 @@ $very-dark-cyan: hsl(179, 100%, 13%);
 $transparent-white: hsla(0, 0%, 100%, 0.75);
 $very-light-gray: hsl(0, 0%, 95%);
 
+h1 {
+  padding: 0.5rem 0;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -32,27 +36,36 @@ $very-light-gray: hsl(0, 0%, 95%);
 }
 
 .btn {
-  margin-top: 5rem;
+  margin-top: 4rem;
   border-width: 2px;
-  padding: 0.75rem 1.75rem;
+  padding: 0.7rem 1.85rem;
   border-radius: 35px;
 }
 
 .btn-orange {
+  color: $bright-orange;
+
   &:hover {
-    color: $bright-orange;
+    background-color: rgba($color: #fff, $alpha: 0.1);
+    color: $very-light-gray;
   }
 }
 
 .btn-cyan {
+  color: $dark-cyan;
+
   &:hover {
-    color: $dark-cyan;
+    background-color: rgba($color: #fff, $alpha: 0.1);
+    color: $very-light-gray;
   }
 }
 
 .btn-dark-cyan {
+  color: $dark-cyan;
+
   &:hover {
-    color: $dark-cyan;
+    background-color: rgba($color: #fff, $alpha: 0.1);
+    color: $very-light-gray;
   }
 }
 
@@ -81,6 +94,12 @@ $very-light-gray: hsl(0, 0%, 95%);
   font-size: 0.95rem;
   line-height: 1.7;
   color: $transparent-white;
+}
+
+@media (max-width: 991px) {
+  .container {
+    height: auto !important;
+  }
 }
 
 @media (max-width: 600px) {
